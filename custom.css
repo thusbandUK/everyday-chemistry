@@ -1,0 +1,20 @@
+.site-wrapper {
+    background-image: url('images/red\ and\ yellow\ model\ tetrahedral\ lattice.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.cover-heading {
+    font-family: 'Permanent Marker', cursive;
+}
+
+.cover .btn-lg {
+    border-radius: 5px;
+    border: 0px;
+    background-color: rgb(255, 255, 255, 0.5);
+}
+
+#tom-feedback h2 {
+    cursor: pointer;
+}
+
