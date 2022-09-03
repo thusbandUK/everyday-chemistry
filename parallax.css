@@ -97,3 +97,15 @@ body {
       url('images/single-soap-bubble.jpg');
     background-size: cover;
   }
+
+  @media screen and (max-device-width: 600px) {
+    
+    
+    
+        #amethyst::after, #bubble::after, #sparkler::after {
+            
+            
+            background-position: center;
+            
+        }
+    }
