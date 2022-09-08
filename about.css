@@ -1,9 +1,233 @@
-html, body {
-    height: 100%;
+
+/* Padding for spacing */
+.inner {
+  padding: 30px;
 }
 
-.site-wrapper {
-    background-color: black;
-    color: white;
-    text-align: left;
+nav {
+  width: 100%;
+  position: absolute;
+  right: 70px;
+  z-index: 1;
 }
+
+
+.nav {
+  padding-top: 20px;
+}
+
+.jumbotron {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+p {
+  font-size: 1.5em;
+}
+
+p.lead {
+  font-size: 1.5em;
+}
+
+h1 {
+  font-family: 'Play', sans-serif;
+}
+
+
+/* Move down content because we have a fixed navbar that is 50px tall */
+body {
+  
+  padding-bottom: 20px;
+}
+
+/*
+ * Header
+ */
+ .masthead-brand {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.masthead-nav > li {
+  display: inline-block;
+}
+.masthead-nav > li + li {
+  margin-left: 20px;
+}
+.masthead-nav > li > a {
+  padding-right: 0;
+  padding-left: 0;
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff; /* IE8 proofing */
+  color: rgba(255, 255, 255, .75);
+  border-bottom: 2px solid transparent;
+}
+.masthead-nav > li > a:hover,
+.masthead-nav > li > a:focus {
+  background-color: transparent;
+  border-bottom-color: #a9a9a9;
+  border-bottom-color: rgba(255, 255, 255, .25);
+}
+.masthead-nav > .active > a,
+.masthead-nav > .active > a:hover,
+.masthead-nav > .active > a:focus {
+  color: #fff;
+  border-bottom-color: #fff;
+}
+
+@media (min-width: 768px) {
+  .masthead-brand {
+    float: left;
+  }
+  .masthead-nav {
+    float: right;
+  }
+}
+
+/*jumbotron*/
+
+#salt {
+  position: relative;
+  background-image: url('images/pile\ of\ salt.jpg');
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position-y: -140px;
+  background-repeat: no-repeat;
+}
+
+.jumbotron {
+  position: relative;
+  height: 130vh;
+  width: 100%;
+  display: flex;
+  background-color: rgb(47, 45, 32);
+}
+
+#jumbotron-text {
+  position: absolute;
+  margin-top: 8%;
+  margin-left: 8%;
+  margin-right: 8%;
+  background-color: rgb(255, 255, 255, 0.2);
+  border-radius: 10px;
+  color: black;
+  width: 80%;
+}
+
+#mobile-include {
+  display: none;
+}
+
+@media screen and (max-device-width: 600px) {
+
+
+
+  nav {
+    left: 5%;
+  }
+
+  .jumbotron {
+    height: 80vh;
+    margin-bottom: 0px;
+
+  }
+
+  #jumbotron-text {
+    margin-top: 12%;
+    width: 92%;
+    margin-left: 4%;
+
+  }
+
+  #salt {
+    background-position-y: 0px;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+}
+
+#jumbotron-text h1 {
+  font-size: 2em;
+}
+
+#mobile-remove {
+  display: none;
+}
+
+#mobile-include {
+  display: block;
+  color: white;
+  margin-top: 15%;
+}
+/*
+#mobile-include p {
+  background-color: rgb(47, 45, 32);
+  font-size: 21px;
+  color: white;
+  padding: 0% 4% 4%;
+  margin-top: 0px;
+
+}
+*/
+/*
+}
+@media (min-width: 992px){
+.container {
+    width: 80%;
+}
+}
+
+@media (min-width: 1200px){
+.container {
+    width: 80%;
+}
+}
+*/
+
+@media screen and (min-width: 600px) and (max-width: 1000px) {
+  
+  nav {
+    right: 0px;
+    left: 5px;
+  }
+
+  #jumbotron-text {
+    width: 92%;
+    margin-left: 4%;
+
+  }
+
+  #salt {
+    background-position-y: 0px;
+    background-position-x: -40px;
+
+}
+
+#jumbotron-text h1 {
+  font-size: 2em;
+}
+
+}
+
+html * {
+  font-family: 'Roboto', sans-serif;
+  
+}
+/*
+@media screen and (max-width: 775px) and (orientation: landscape)  {
+  nav  {
+    right: 0px;
+    left: 5px;
+  }
+}
+
+@media print and (min-width: 775px) {
+  nav {
+    right: 80px;
+    left: 0px;
+  }
+}
+*/
+/*featurettes and images*/

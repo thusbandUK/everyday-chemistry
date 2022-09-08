@@ -11,16 +11,23 @@ a:hover {
   color: #fff;
 }
 
-/* Custom default button */
+/* Custom default button 
 .btn-default,
 .btn-default:hover,
 .btn-default:focus {
   color: #333;
-  text-shadow: none; /* Prevent inheritance from `body` */
+  text-shadow: none; /* Prevent inheritance from `body` *//*
   background-color: #fff;
   border: 1px solid #fff;
 }
-
+*/
+.btn-default,
+.btn-default:hover,
+.btn-default:focus {
+  color: #fff;
+  background-color: #337ab7;
+  border-color: #2e6da4;
+}
 
 /*
  * Base structure
