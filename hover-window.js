@@ -35,7 +35,16 @@ let quote1Window;
       
   }
 
+  //const popup = window.open('http://example.com/success')
+  window.addEventListener('message', event => {
+    // Only accept messages from http://example.com.
+    if (event.origin === 'https://www.nowchemistry.com/availability.html') {
+      if (event.data === 'close') quote1Window.close()
+    }
+  })
 
+
+/*
   var receiveMessage = function (event) {
     if (event.data.indexOf("SUCCESS") !== -1 && event.origin.indexOf('https://www.nowchemistry.com') !== -1) {
         quote1Window.close();
@@ -44,7 +53,7 @@ let quote1Window;
 };
 
 window.removeEventListener("message", receiveMessage);
-
+*/
 /*
   //const popup = window.open('http://example.com/success')
 quote1Window.addEventListener('message', event => {
