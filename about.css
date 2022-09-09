@@ -154,13 +154,13 @@ body {
 
   .jumbotron {
     /*height: 100vh;*/
-    height: 700px;
+    height: 800px;
     margin-bottom: 0px;
 
   }
 
   #jumbotron-text {
-    margin-top: 12%;
+    margin-top: 16%;
     width: 92%;
     margin-left: 4%;
 
