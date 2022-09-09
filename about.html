@@ -169,7 +169,7 @@
 
      </div>
      <div class="col-md-7" id="form-container">
-      <form action="/thanks.html" name="Contact-form" method="POST" data-netlify="true" content-Type="application/x-www-form-urlencoded">
+      <form action="/thanks.html" name="Contact-form" method="POST" data-netlify="true" data-netlify-recaptcha="true" content-Type="application/x-www-form-urlencoded">
         <div class="form-group">
           <label for="name">Name</label>
           <input type="name" class="form-control" id="name" placeholder="Name" name="name">
@@ -198,6 +198,7 @@
           <label for="inquiry">Your inquiry. Feel free to include time(s) you would like tutoring</label>
           <textarea class="form-control" id="inquiry" rows="3" name="inquiry"></textarea>
         </div>
+        <div data-netlify-recaptcha="true"></div>
         <button type="submit" class="btn btn-lg btn-default">Submit</button>
       </form>
 
