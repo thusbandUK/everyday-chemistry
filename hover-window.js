@@ -39,6 +39,7 @@ let quote1Window;
   var receiveMessage = function (event) {
     if (event.data.indexOf("SUCCESS") !== -1 && event.origin.indexOf('https://www.nowchemistry.com/availability.html') !== -1) {
         quote1Window.close();
+        quote1Window.style.backgroundColor = 'red';
     }
 };
 
