@@ -449,20 +449,20 @@
 
 /*Different device buttons*/
 
-.device {
+#device {
 	display: none;
 }
 
-.desktop {
+#desktop {
 	display: block;
 }
 
 @media screen and (max-device-width: 972px) {
-	.desktop {
+	#desktop {
 		display: none;
 	}
 
-	.device {
+	#device {
 		display: block;
 	}
 }
