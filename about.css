@@ -1,3 +1,23 @@
+/*booking and availability
+
+#booking-container {
+  display: flex;
+}
+
+#availability {
+  width: 40%;
+}
+
+#form-container {
+  width: 40%;
+}
+*/
+
+#booking-container .btn {
+  /*margin: 20%;*/
+  white-space: word-wrap;
+  margin: 6.5% auto;
+}
 
 /* Padding for spacing */
 .inner {
@@ -30,7 +50,9 @@ p.lead {
 }
 
 h1 {
-  font-family: 'Play', sans-serif;
+  /*font-family: 'Play', sans-serif;*/
+  font-family: timmana;
+    letter-spacing: 6px;
 }
 
 
@@ -129,7 +151,7 @@ body {
   }
 
   .jumbotron {
-    height: 80vh;
+    height: 100vh;
     margin-bottom: 0px;
 
   }
@@ -142,11 +164,15 @@ body {
   }
 
   #salt {
-    background-position-y: 0px;
-    background-size: contain;
+    background-position-y: -150px;
+    background-position-x: -500px;
+    background-size: cover;
     background-repeat: no-repeat;
 
 }
+
+
+
 
 #jumbotron-text h1 {
   font-size: 2em;
@@ -159,8 +185,61 @@ body {
 #mobile-include {
   display: block;
   color: white;
-  margin-top: 15%;
+  margin-top: 50%;
 }
+
+}
+/* BRING THIS BACK AS 800 TO 1000 ONCE 600 TO 800 SORTED*/
+@media screen and (min-device-width: 800px) and (max-device-width: 1000px) {
+  #mobile-remove {
+    display: none;
+  }
+  
+  #mobile-include {
+    display: block;
+    color: white;
+    margin-top: 30%;
+  }
+
+  
+
+  #salt {
+    background-position-y: -120px;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+}
+
+}
+
+
+/*this will be 600 to 800*/
+@media screen and (min-device-width: 600px) and (max-device-width: 800px) {
+  nav {
+    right: 0px;
+    left: 5px;
+  }
+
+
+  #mobile-remove {
+    display: none;
+  }
+  
+  #mobile-include {
+    display: block;
+    color: white;
+    margin-top: 30%;
+  }
+
+  #salt {
+    background-position-y: -30px;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+}
+
+}
+
 /*
 #mobile-include p {
   background-color: rgb(47, 45, 32);
@@ -187,12 +266,12 @@ body {
 */
 
 @media screen and (min-width: 600px) and (max-width: 1000px) {
-  
+  /*
   nav {
     right: 0px;
     left: 5px;
   }
-
+*/
   #jumbotron-text {
     width: 92%;
     margin-left: 4%;
@@ -200,8 +279,8 @@ body {
   }
 
   #salt {
-    background-position-y: 0px;
-    background-position-x: -40px;
+   /* background-position-y: 0px;
+    background-position-x: -40px;*/
 
 }
 
@@ -231,3 +310,24 @@ html * {
 }
 */
 /*featurettes and images*/
+
+@media screen and (min-width: 768px) and (max-width: 800px) {
+nav {
+  right: 70px;
+  left: -30px;
+}
+
+}
+ 
+
+/*availability and contact form
+
+#availability .col-md-5 * {
+  width: 38%;
+}
+
+#form-container .col-md-7 * {
+  width: 58%;
+}
+
+*/

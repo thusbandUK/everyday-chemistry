@@ -5,9 +5,12 @@
 }
 
 .cover-heading {
-    font-family: 'Play', sans-serif;
+    /*font-family: 'Play', sans-serif;*/
     font-size: 8rem;
+    font-family: timmana;
+    letter-spacing: 6px;
 }
+
 /*
 .cover .btn-lg {
     border-radius: 5px;
@@ -29,6 +32,7 @@ html * {
 h1 * {
     font-size: 10rem;
 }
+    
 
 .lead {
   font-size: 2em;
