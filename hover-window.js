@@ -38,7 +38,7 @@ let quote1Window;
   //const popup = window.open('http://example.com/success')
   window.addEventListener('message', event => {
     // Only accept messages from http://example.com.
-    if (event.origin === 'https://www.nowchemistry.com/availability.html') {
+    if (event.origin === 'https://www.nowchemistry.com') {
       if (event.data === 'close') quote1Window.close()
     }
   })
