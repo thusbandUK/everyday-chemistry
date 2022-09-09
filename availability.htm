@@ -720,37 +720,3 @@ tags will be replaced.-->
     })
   </script>
 </html>
-<!--
-<html lang="en">
-  <body>
-  <div class="row text-center" style="margin-top:50px">
-    Success!
-    <button type="button" class="btn btn-primary">Go Back</button>
-  </div>
-  </body>
-  <script>
-    document.querySelector('button').addEventListener('click', () => {
-      // Only send messages to http://example.com.
-      window.opener.postMessage('close', 'http://example.com')
-    })
-  </script>
-</html>
--->
-<!--
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<div class="row text-center" style="margin-top:50px">
-    Success!
-    <button type="button" class="btn btn-primary" onclick="closeWindow()">Go Back</button>
-</div>
-</body>
-<script >
-function closeWindow(e)
-{
-    window.parent.postMessage('SUCCESS', 'http://localserver.com')
-    console.log(e);
-}
-</script>
-</html>
--->
