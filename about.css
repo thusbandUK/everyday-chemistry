@@ -115,13 +115,15 @@ body {
   height: 100%;
   width: 100%;
   background-size: cover;
-  background-position-y: -140px;
+  /*background-position-y: -140px;*/
+  background-position: center;
   background-repeat: no-repeat;
 }
 
 .jumbotron {
   position: relative;
-  height: 130vh;
+  /*height: 130vh;*/
+  height: 700px;
   width: 100%;
   display: flex;
   background-color: rgb(47, 45, 32);
