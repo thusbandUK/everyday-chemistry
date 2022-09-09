@@ -25,9 +25,42 @@ width=0,height=0,left=-1000,top=-1000`;
 
   }
 */
+
+let quote1Window;
+
   const availability = () => {
-    const quote1Window = window.open('./availability.htm', 'Availability', params);
+     quote1Window = window.open('./availability.html', 'Availability', params);
     setTimeout(() => quote1Window, 1000);
-    /*window.open('https://javascript.info');
-    setTimeout(() => quote1Window.close(), 10000);*/
+    
+      
   }
+
+
+  var receiveMessage = function (event) {
+    if (event.data.indexOf("SUCCESS") !== -1 && event.origin.indexOf('https://nowchemistry.com/availability.html') !== -1) {
+        quote1Window.close();
+    }
+};
+
+window.removeEventListener("message", receiveMessage);
+
+/*
+  //const popup = window.open('http://example.com/success')
+quote1Window.addEventListener('message', event => {
+  // Only accept messages from http://example.com.
+  if (event.origin === 'https://www.nowchemistry.com/availability.html') {
+    if (event.data === 'close') quote1Window.close()
+  }
+})
+
+
+  const windowClose = () => {
+    /*const button = document.getElementById('desktop');
+    //getElementsById('desktop');
+    button.onclick = function(){
+      button.style.backgroundColor = 'red';
+      
+    };*//*
+    quote1Window.close();
+  }
+  */

@@ -445,3 +445,24 @@
 	mso-pattern:auto;
 	white-space:normal;}
 -->
+
+
+/*Different device buttons*/
+
+.device {
+	display: none;
+}
+
+.desktop {
+	display: block;
+}
+
+@media screen and (max-device-width: 972px) {
+	.desktop {
+		display: none;
+	}
+
+	.device {
+		display: block;
+	}
+}

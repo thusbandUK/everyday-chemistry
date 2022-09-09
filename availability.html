@@ -7,6 +7,7 @@ xmlns="http://www.w3.org/TR/REC-html40">
 <meta name=ProgId content=Excel.Sheet>
 <meta name=Generator content="Microsoft Excel 15">
 <link rel=File-List href="excel%20experiment_files/filelist.xml">
+<link rel="stylesheet" href="./availability.css"
 <style id="Book1_14376_Styles">
 <!--table
 	{mso-displayed-decimal-separator:"\.";
@@ -695,13 +696,60 @@ tags will be replaced.-->
 </div>
 
 <div>
-	<p class="lead">
-              <a onclick="history.back()" class="btn btn-lg btn-default">Inquire about lessons now</a>
+	<p class="desktop" >
+		<button type="button" >Click to check some detail in window</button>
+              <a onclick="closeWindow();" id="desktop" class="btn btn-lg btn-default">Close window</a>
+            </p>
+	</div>
+	<div>
+	<p class="device">
+              <a onclick="history.back()" class="btn btn-lg btn-default">Return to contact form</a>
             </p>
 	</div>
 <!----------------------------->
 <!--END OF OUTPUT FROM EXCEL PUBLISH AS WEB PAGE WIZARD-->
 <!----------------------------->
+<script src="hover-window.js"></script>
 </body>
-
+<script >
+	function closeWindow(e)
+	{
+		window.parent.postMessage('SUCCESS', 'https://nowchemistry.com/about.html')
+		console.log(e);
+	}
+	</script>
 </html>
+<!--
+<html lang="en">
+  <body>
+  <div class="row text-center" style="margin-top:50px">
+    Success!
+    <button type="button" class="btn btn-primary">Go Back</button>
+  </div>
+  </body>
+  <script>
+    document.querySelector('button').addEventListener('click', () => {
+      // Only send messages to http://example.com.
+      window.opener.postMessage('close', 'http://example.com')
+    })
+  </script>
+</html>
+-->
+<!--
+<!DOCTYPE html>
+<html lang="en">
+<body>
+<div class="row text-center" style="margin-top:50px">
+    Success!
+    <button type="button" class="btn btn-primary" onclick="closeWindow()">Go Back</button>
+</div>
+</body>
+<script >
+function closeWindow(e)
+{
+    window.parent.postMessage('SUCCESS', 'http://localserver.com')
+    console.log(e);
+}
+</script>
+</html>
+-->
