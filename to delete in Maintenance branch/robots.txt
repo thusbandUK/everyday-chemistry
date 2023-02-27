@@ -1,0 +1,5 @@
+User-agent: Googlebot
+Disallow: /availability.html/
+
+
+Sitemap: https://www.nowchemistry.com/sitemap.txt

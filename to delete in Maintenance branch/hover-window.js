@@ -29,7 +29,7 @@ width=0,height=0,left=-1000,top=-1000`;
 let quote1Window;
 
   const availability = () => {
-     quote1Window = window.open('./availability.html', 'Availability', params);
+     quote1Window = window.open('./availability.htm', 'Availability', params);
     setTimeout(() => quote1Window, 1000);
     
       

@@ -1,0 +1,5 @@
+sitemap
+
+www.nowchemistry.com
+www.nowchemistry.com/about.html
+www.nowchemistry.com/availability.html
