@@ -1,28 +1,5 @@
-/*booking and availability
+/*Configuration whole page details eg: html, colour scheme, headings etc*/
 
-#booking-container {
-  display: flex;
-}
-
-#availability {
-  width: 40%;
-}
-
-#form-container {
-  width: 40%;
-}
-*/
-/*
-body {
-  background-image: url('images/retro\ colours\ test\ tube\ mosaic\ png.png');
-  background-repeat: repeat;
-  background-size: 50%;
-}
-
-.container {
-  background-color: white;
-}
-*/
 html li {
   list-style-type: none;
 }
@@ -36,6 +13,31 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Roboto', sans-serif;
   color: var(--brown);
 }
+
+/* Colour scheme Variables */
+:root {
+   /*40. Appetizing hues https://www.wix.com/blog/website-color-schemes?utm_source=google&utm_medium=cpc&utm_campaign=13774768257^126077909722&experiment_id=^^531699814067^^_DSA&gclid=CjwKCAjw5remBhBiEiwAxL2M9_KoQc568cuiljlWBxVaDEtG7WiNs9Rt6qvzIYnt7bVAWv3QGEEJ_hoCfZIQAvD_BwE#viewer-fld8n*/
+   --lightGrey: rgb(231,226,211);
+   --tan: rgb(251, 188, 150);
+   --red: rgb(237,28,36);
+   --brown: rgb(165,30,34);
+   --black: rgb(0,0,0);
+}
+
+body {
+  background-color: var(--lightGrey);
+}
+
+/*Whole page spacings*/
+.section {
+  margin: 2% 3%;
+}
+
+.testimonial-inner {
+  margin: 2% 10%;
+}
+
+/*Links configuration*/
 
 a {
   color: var(--brown);
@@ -54,54 +56,9 @@ a:active {
 
 a:visited {
   font-style: italic !important;
-
 }
 
-/* Colour scheme Variables */
-:root {
-  --text: black;
-  /*#FFEDE9*/
-  --redText: red;
-  --blueText: blue;
-  --pinkText: rgb(244,154,194);
-  --highlightText: #7DEEF5;
-  --darkerBackground: rgb(39,39,39); 
-  /*#2E2E2E;*/
-  --lighterBackground: rgb(18,61,87);
-   /*#043E60;*/
-
-   /*test tube colours experiment  - ANOTHER POSSIBILITY IS THE PH SCALE */
-   --testTubePink: deeppink;
-   --testTubeOrange: orange;
-   --testTubeBlue: rgb(0, 71, 171);
-   --testTubeYellow: rgb(179, 232, 36);
-
-   /*40. Appetizing hues https://www.wix.com/blog/website-color-schemes?utm_source=google&utm_medium=cpc&utm_campaign=13774768257^126077909722&experiment_id=^^531699814067^^_DSA&gclid=CjwKCAjw5remBhBiEiwAxL2M9_KoQc568cuiljlWBxVaDEtG7WiNs9Rt6qvzIYnt7bVAWv3QGEEJ_hoCfZIQAvD_BwE#viewer-fld8n*/
-   --lightGrey: rgb(231,226,211);
-   --tan: rgb(251, 188, 150);
-   --red: rgb(237,28,36);
-   --brown: rgb(165,30,34);
-   --black: rgb(0,0,0);
-
-
-}
-
-body {
-  background-color: var(--lightGrey);
-}
-
-.test-tube-colour-scheme-experiment {
-  background-color: var(--testTubeYellow);
-  color: var(--testTubeBlue);
-}
-
-.section {
-  margin: 2% 3%;
-}
-
-.testimonial-inner {
-  margin: 2% 10%;
-}
+/*Buttons config*/
 
 .btn {
   
@@ -120,64 +77,25 @@ body {
   
 }
 
-#booking-container .btn {
-  /*margin: 20%;*/
-  white-space: word-wrap;
-  margin: 6.5% auto;
-}
-
-/* Padding for spacing */
-.inner {
-  padding: 30px;
-}
-/*
-nav {
-  width: 100%;
-  position: absolute;
-  right: 70px;
-  z-index: 1;
-}
-
-
-.nav {
-  padding-top: 20px;
-}
-
-*/
-
-.jumbotron {
-  padding-top: 0px;
-  padding-bottom: 0px;
-}
+/*Size of text in paragraphs*/
 
 p {
   font-size: 1.5em;
 }
 
+/*Size of text in featurette paragraphs*/
+
 p.lead {
   font-size: 1.5em;
 }
 
+/*Size of main heading(s)*/
+
 h1 {
-  /*font-family: 'Play', sans-serif;
-  font-family: timmana;*/
-    letter-spacing: 6px;
+  font-size: 6rem;
 }
 
-
-/* Move down content because we have a fixed navbar that is 50px tall 
-body {
-  
-  padding-bottom: 20px;
-}
-*/
-/*
- * Header
- */
- .masthead-brand {
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
+/*Navbar header and footer*/
 
 .navbar-brand {
   font-family: 'Aldrich', sans-serif;
@@ -191,23 +109,16 @@ body {
 
  --bs-nav-link-color: var(--red);
  --bs-navbar-color: var(--lightGrey);    
- --bs-navbar-hover-color: var(--redText);
+ --bs-navbar-hover-color: var(--red);
  --bs-navbar-disabled-color: #{$navbar-dark-disabled-color};
  --bs-navbar-active-color: var(--tan);
  --bs-navbar-brand-color: var(--lightGrey);
  --bs-navbar-brand-hover-color: var(--red);
- --bs-navbar-toggler-border-color: var(--lightGrey);
- /*--bs-navbar-toggler-icon-bg: var(--lightGrey);*/
+ --bs-navbar-toggler-border-color: var(--lightGrey); 
  --bs-border-color: var(--pinkText);
 }
 
-.navbar .container-fluid {
- /* width: 87% !important;*/
-}
-
-h1 {
-  font-size: 6rem;
-}
+/*Testimonials styling*/
 
 .testimonial {
   background-color: var(--tan);
@@ -215,23 +126,21 @@ h1 {
   font-family: 'Caveat', cursive !important;
 }
 
+/*Styling for test tube bullets*/
+
 .test-tube-icons-list-item-container {
   display: inline-block;
 }
 
 .test-tube-icon-container {
-  margin: 0% 1%;
-  
+  margin: 0% 1%;  
 }
-
-
 
 .test-tube-icon {
   height: 1.2rem;
   position: relative;
   top: -5%;
-   width: auto;
-  
+  width: auto;  
 }
 
 li {
@@ -239,286 +148,42 @@ li {
   font-size: 1.2rem;
 }
 
+/*Media query for larger screens*/
 
-
-.masthead-nav > li {
-  display: inline-block;
-}
-.masthead-nav > li + li {
-  margin-left: 20px;
-}
-.masthead-nav > li > a {
-  padding-right: 0;
-  padding-left: 0;
-  font-size: 16px;
-  font-weight: 700;
-  /*color: #fff; /* IE8 proofing */
-  /*color: rgba(255, 255, 255, .75);*/
-  border-bottom: 2px solid transparent;
-}
-.masthead-nav > li > a:hover,
-.masthead-nav > li > a:focus {
-  background-color: transparent;
-  border-bottom-color: #a9a9a9;
-  border-bottom-color: rgba(255, 255, 255, .25);
-}
-.masthead-nav > .active > a,
-.masthead-nav > .active > a:hover,
-.masthead-nav > .active > a:focus {
-  color: #fff;
-  border-bottom-color: #fff;
-}
-
-@media (min-width: 768px) {
-  .masthead-brand {
-    float: left;
-  }
-  .masthead-nav {
-    float: right;
-  }
-}
-
-/*jumbotron*/
-
-#salt {
-  position: relative;
-  background-image: url('images/pile\ of\ salt.jpg');
-  height: 100%;
-  width: 100%;
-  background-size: cover;
-  /*background-position-y: -140px;*/
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.jumbotron {
-  position: relative;
-  /*height: 130vh;*/
-  height: 700px;
-  width: 100%;
-  display: flex;
-  background-color: rgb(47, 45, 32);
-}
-
-#jumbotron-text {
-  position: absolute;
-  margin-top: 8%;
-  margin-left: 8%;
-  margin-right: 8%;
-  background-color: rgb(255, 255, 255, 0.2);
-  border-radius: 10px;
-  color: black;
-  width: 80%;
-}
-
-#mobile-include {
-  display: none;
-}
-
-@media screen and (max-device-width: 600px) {
-
-
-
-  nav {
-    left: 5%;
-  }
-
-  .jumbotron {
-    /*height: 100vh;*/
-    height: 800px;
-    margin-bottom: 0px;
-
-  }
-
-  #jumbotron-text {
-    margin-top: 16%;
-    width: 92%;
-    margin-left: 4%;
-
-  }
-
-  #salt {
-    background-position-y: -150px;
-    background-position-x: -500px;
-    background-size: cover;
-    background-repeat: no-repeat;
-
-}
-
-
-
-
-#jumbotron-text h1 {
-  font-size: 2em;
-}
-
-#mobile-remove {
-  display: none;
-}
-
-#mobile-include {
-  display: block;
-  color: white;
-  margin-top: 50%;
-}
-
-}
-/* BRING THIS BACK AS 800 TO 1000 ONCE 600 TO 800 SORTED*/
-@media screen and (min-device-width: 800px) and (max-device-width: 1000px) {
-  #mobile-remove {
-    display: none;
-  }
-  
-  #mobile-include {
-    display: block;
-    color: white;
-    margin-top: 30%;
-  }
-
-  
-
-  #salt {
-    background-position-y: -120px;
-    background-size: contain;
-    background-repeat: no-repeat;
-
-}
-
-}
-
-
-/*this will be 600 to 800*/
-@media screen and (min-device-width: 600px) and (max-device-width: 800px) {
-  nav {
-    right: 0px;
-    left: 5px;
-  }
-
-
-  #mobile-remove {
-    display: none;
-  }
-  
-  #mobile-include {
-    display: block;
-    color: white;
-    margin-top: 50%;
-  }
-
-  #salt {
-    background-position-y: -30px;
-    background-size: contain;
-    background-repeat: no-repeat;
-
-}
-
-}
-
-/*
-#mobile-include p {
-  background-color: rgb(47, 45, 32);
-  font-size: 21px;
-  color: white;
-  padding: 0% 4% 4%;
-  margin-top: 0px;
-
-}
-*/
-/*
-}
-@media (min-width: 992px){
-.container {
-    width: 80%;
-}
-}
-
-@media (min-width: 1200px){
-.container {
-    width: 80%;
-}
-}
-*/
-
-@media screen and (min-width: 600px) and (max-width: 1000px) {
-  /*
-  nav {
-    right: 0px;
-    left: 5px;
-  }
-*/
-  #jumbotron-text {
-    width: 92%;
-    margin-left: 4%;
-
-  }
-
-  #salt {
-   /* background-position-y: 0px;
-    background-position-x: -40px;*/
-
-}
-
-#jumbotron-text h1 {
-  font-size: 2em;
-}
-
-}
-
-
-/*
-@media screen and (max-width: 775px) and (orientation: landscape)  {
-  nav  {
-    right: 0px;
-    left: 5px;
-  }
-}
-
-@media print and (min-width: 775px) {
-  nav {
-    right: 80px;
-    left: 0px;
-  }
-}
-*/
-/*featurettes and images
-
-@media screen and (min-width: 768px) and (max-width: 800px) {
-nav {
-  right: 70px;
-  left: -30px;
-}
-
-}
- */
 @media screen and (min-width: 992px) {
+  /*Gives decent size margins*/
   .section {
     margin: 5% 15%;
   }
 }
 
+/*Media query for smaller screens*/
+
 @media screen and (max-width: 992px) {
+  /*Flips column direction to make hero feature and fudge feature sequence image and text in correct direction*/
   #hero-text-row, .fudge-featurette {
     flex-direction: column-reverse;
   }
+
+  
+/*Smaller main heading for smaller screens*/
 
   h1 {
     font-size: 3rem;
   }
 
+  /*A trio of settings that eliminate annoying bits of white space on mobile viewings*/
   .section, .testimonial-inner {
     margin-top: 0%;
+  }  
+
+  #hero-text-row {
+    padding-right: 0% !important;
+    margin-right: 0% !important;
   }
-  
+
+  #hero-text-row .col-md-4 {
+    padding-right: 0% !important;
+  }
 }
 
-/*availability and contact form
-
-#availability .col-md-5 * {
-  width: 38%;
-}
-
-#form-container .col-md-7 * {
-  width: 58%;
-}
-
-*/
